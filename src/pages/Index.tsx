@@ -32,6 +32,9 @@ export default function Index() {
               <button className="btn-cta" style={{ background: "white" }}>
                 Смотреть меню
               </button>
+              <a href="tel:+79531873539" className="btn-cta" style={{ background: "var(--accent)", color: "var(--dark)", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "6px" }}>
+                📞 Позвонить
+              </a>
             </div>
           </div>
           <div className="hero-img">
