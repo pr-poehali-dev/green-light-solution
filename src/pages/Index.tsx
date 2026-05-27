@@ -240,6 +240,14 @@ export default function Index() {
                 📍 Тула, ул. 9 Мая, д. 3
               </a>
             </li>
+            <li>
+              <a
+                href="tel:+79531873539"
+                style={{ color: "var(--primary)", textDecoration: "none", fontWeight: 700 }}
+              >
+                📞 +7 (953) 187-35-39
+              </a>
+            </li>
           </ul>
         </div>
         <div className="footer-links">
