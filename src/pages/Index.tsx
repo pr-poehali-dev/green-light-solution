@@ -228,6 +228,12 @@ export default function Index() {
           </ul>
         </div>
         <div className="footer-links">
+          <h4>Адреса</h4>
+          <ul>
+            <li>📍 Тула, ул. 9 Мая, д. 3</li>
+          </ul>
+        </div>
+        <div className="footer-links">
           <h4>Часы работы</h4>
           <ul>
             <li>Пн-Чт: 10:00 - 23:00</li>
