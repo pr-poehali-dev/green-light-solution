@@ -23,7 +23,7 @@ export default function Index() {
               ВКУСНО, <span>ТОП!</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Сеть фастфуда, где каждый бургер — это событие. Сочное мясо, хрустящая курица и соусы от шефа — быстро и без компромиссов.
+              Шаурма, бургеры, шашлык — всё в одном месте. Сочное мясо, авторские соусы и горячая подача — быстро и без компромиссов.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
@@ -41,18 +41,18 @@ export default function Index() {
               КАЧЕСТВО
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ФАСТФУД
+              #ШАУРМА
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              СОЧНО
+              ШАШЛЫК
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КОТОРЫЕ РВУТ * ХРУСТЯЩАЯ КУРИЦА * СОУСЫ ОТ ШЕФА * ДОСТАВКА ЗА 30 МИНУТ * СЕТЬ ТОП *
-            БУРГЕРЫ КОТОРЫЕ РВУТ * ХРУСТЯЩАЯ КУРИЦА * СОУСЫ ОТ ШЕФА * ДОСТАВКА ЗА 30 МИНУТ * СЕТЬ ТОП
+            &nbsp; * ШАУРМА КОТОРАЯ РВЁТ * СОЧНЫЕ БУРГЕРЫ * ШАШЛЫК НА УГЛЯХ * СОУСЫ ОТ ШЕФА * ДОСТАВКА ЗА 30 МИНУТ * СЕТЬ ТОП *
+            ШАУРМА КОТОРАЯ РВЁТ * СОЧНЫЕ БУРГЕРЫ * ШАШЛЫК НА УГЛЯХ * СОУСЫ ОТ ШЕФА * ДОСТАВКА ЗА 30 МИНУТ * СЕТЬ ТОП
           </div>
         </div>
 
@@ -73,6 +73,33 @@ export default function Index() {
             <div className="menu-card">
               <span className="menu-tag">Хит продаж</span>
               <img
+                src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="ТОП Шаурма"
+              />
+              <div className="menu-card-body">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    marginBottom: "10px",
+                  }}
+                >
+                  <h3>ТОП Шаурма</h3>
+                  <span className="price">259 ₽</span>
+                </div>
+                <p style={{ fontSize: "14px", color: "#666" }}>
+                  Сочная курица на вертеле, свежие овощи, маринованный лук и фирменный чесночный соус в тёплой лепёшке.
+                </p>
+              </div>
+            </div>
+
+            {/* Item 2 */}
+            <div className="menu-card">
+              <span className="menu-tag" style={{ background: "var(--secondary)" }}>
+                Популярное
+              </span>
+              <img
                 src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                 alt="ТОП Бургер"
               />
@@ -88,45 +115,18 @@ export default function Index() {
                   <h3>ТОП Бургер</h3>
                   <span className="price">289 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>
-                  Двойная говяжья котлета, сыр чеддер, хрустящий лук и фирменный ТОП-соус на поджаренной булке.
-                </p>
-              </div>
-            </div>
-
-            {/* Item 2 */}
-            <div className="menu-card">
-              <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Острое
-              </span>
-              <img
-                src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Огненная курица"
-              />
-              <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>Огненная курица</h3>
-                  <span className="price">249 ₽</span>
-                </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Хрустящее куриное филе в остром маринаде, коул-слоу и соус чили — горит так, как надо.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>Двойная говяжья котлета, сыр чеддер, хрустящий лук и фирменный ТОП-соус на поджаренной булке.</p>
               </div>
             </div>
 
             {/* Item 3 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Новинка
+                На углях
               </span>
               <img
-                src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Картофель ТОП"
+                src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Шашлык ТОП"
               />
               <div className="menu-card-body">
                 <div
@@ -137,11 +137,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Картофель ТОП</h3>
-                  <span className="price">119 ₽</span>
+                  <h3>Шашлык ТОП</h3>
+                  <span className="price">349 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Толстые ломтики с хрустящей корочкой, паприка, морская соль и соус на выбор.
+                  Свинина или курица на углях, маринад по рецепту шефа, лаваш и свежий салат из помидоров с луком.
                 </p>
               </div>
             </div>
@@ -150,10 +150,10 @@ export default function Index() {
 
         <section className="retro-vibe">
           <div>
-            <h2 className="vibe-title">ЕДА — ЭТО СЕРЬЁЗНО.</h2>
+            <h2 className="vibe-title">ШАУРМА. БУРГЕР. ШАШЛЫК.</h2>
             <p className="vibe-text">
-              Сеть ТОП — это не просто фастфуд. Это честная еда без лишних слов: свежие ингредиенты, горячая подача, быстро.
-              Мы открыты в каждом районе — найди свою точку и приходи голодным.
+              Три хита в одном месте — без беготни по разным точкам. Сеть ТОП работает каждый день: свежее мясо, горячая подача
+              и соусы, от которых хочется ещё. Найди ближайшую точку и приходи голодным.
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
               О нас
