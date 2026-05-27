@@ -230,7 +230,16 @@ export default function Index() {
         <div className="footer-links">
           <h4>Адреса</h4>
           <ul>
-            <li>📍 Тула, ул. 9 Мая, д. 3</li>
+            <li>
+              <a
+                href="https://yandex.ru/maps/?text=Тула+улица+9+Мая+3"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "var(--primary)", textDecoration: "none", fontWeight: 700 }}
+              >
+                📍 Тула, ул. 9 Мая, д. 3
+              </a>
+            </li>
           </ul>
         </div>
         <div className="footer-links">
